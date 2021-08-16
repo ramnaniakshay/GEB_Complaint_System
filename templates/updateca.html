@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+    <br/>
+    <a href="/dashboarda" class="btn btn-success btn-lg">Back to Dashboard</a>
+    <br/><br/>
+    <table style="text-align: center;" class="table table-responsive table-striped">
+        <thead>
+          <tr class="bg-primary">
+            <th style="text-align: center;">Complaint No</th>
+            <th style="text-align: center;">Register Date</th>
+            <th style="text-align: center;">Description</th>
+            <th style="text-align: center;">Complaint made by</th>
+            <th style="text-align: center;">Address</th>
+            <th style="text-align: center;">Pin Code</th>
+            <th style="text-align: center;">Contact Number</th>
+            <th style="text-align: center;">Fnished date</th>
+            <th style="text-align: center;">work Assigned to</th>
+            <th style="text-align: center;">Employee Name</th>
+            <th style="text-align: center;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4</td>
+            <td>6th JULY, 2021</td>
+            <td>All Lights are blinking</td>
+            <td>Akshay Ramnani</td>
+            <td>22, Shiv Shakti Society Sainath Road, Petlad</td>
+            <td>388450</td>
+            <td>9979499950</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="/editca">Edit</a></td>
+          </tr>      
+          <tr>
+            <td>5</td>
+            <td>8th JULY, 2021</td>
+            <td>Street lights are off in our area</td>
+            <td>Raman Patel</td>
+            <td>2, Shiv Shakti Society Sainath Road, Petlad</td>
+            <td>388450</td>
+            <td>9979789950</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="/editca">Edit</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>30th JUNE, 2021</td>
+            <td>Low voltage in our area</td>
+            <td>Kishan Ka.Patel</td>
+            <td>10, Shiv Shakti Society Sainath Road, Petlad</td>
+            <td>388450</td>
+            <td>9824012345</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="/editca">Edit</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+{% endblock  %}

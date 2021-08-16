@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <br/><br/><br/>
+                <form class="" method="POST" action="login.php">
+                    <div class="form-group">
+                        <label for="pcode">Complaint no:</label>
+                        <input type="text" class="form-control" id="pcode" disabled name="pcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="pcode">Register Date:</label>
+                        <input type="text" class="form-control" id="pcode" disabled name="pcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Description:</label>
+                        <textarea placeholder="Example...... Street lights are off" disabled class="form-control" rows="3" id="desc"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pcode">Complaint made by</label>
+                        <input type="text" class="form-control" id="pcode" disabled name="pcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea placeholder="Example...... 22, Shiv Shakti Society, Sainath Road" disabled class="form-control" rows="3" id="desc"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pcode">Pin Code:</label>
+                        <input type="text" class="form-control" id="pcode" disabled name="pcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="pcode">Contact Number:</label>
+                        <input type="text" class="form-control" id="pcode" disabled name="pcode">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Work Completion date:</label>
+                        <input type="date" class="form-control" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Work Assigned to</label>
+                        <select class="form-control" id="sel1" required>
+                          <option>Heet Kalariya</option>
+                          <option>Rakesh Patel</option>
+                          <option>Kishan Shah</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="btn btn-danger btn-lg" name="update" type = "submit" value = "update"></input>
+                    </div>
+                  </form>
+            </div>
+        </div>
+        
+    </div>
+{% endblock  %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% if request.session.email %}
+{% block content %}
+
+    <div style="padding-top: 11%; padding-bottom: 12%;" class="container">
+        <div class="row">
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/usercomplaints">
+                    <h1>VC</h1>
+                    <br/>
+                    <p>View Complaints</p>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/addcc">
+                    <h1>RC</h1>
+                    <br/>
+                    <p>Register a Complaint</p>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/logout">
+                    <h1>LO</h1>
+                    <br/>
+                    <p>Log Out</p>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
+{% else %}
+<a href='login'>Log in to continue</a>
+{% endif %}

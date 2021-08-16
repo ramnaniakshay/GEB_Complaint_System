@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="padding-top: 6%; padding-bottom: 6%;" class="container">
+        <div class="row">
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/viewca">
+                    <h1>VC</h1>
+                    <br/>
+                    <p>View Complaints</p>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/updateca">
+                    <h1>PC</h1>
+                    <br/>
+                    <p>Pending Complains</p>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/logouta">
+                    <h1>LO</h1>
+                    <br/>
+                    <p>Log Out</p>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div style="background-color: blue; text-align: center;" class="col-md-3">
+                <a style="text-decoration: none; color: white;" href="/manageuser">
+                    <h1>VU</h1>
+                    <br/>
+                    <p>View Users</p>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock  %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+    <br/>
+    <a href="/addcc" class="btn btn-success btn-lg">Register a Complaint</a>
+    <br/><br/>
+    <table style="text-align: center;" class="table table-responsive table-striped">
+        <thead>
+          <tr class="bg-primary">
+            <th style="text-align: center;">Complaint No</th>
+            <th style="text-align: center;">Date</th>
+            <th style="text-align: center;">Description</th>
+            <th style="text-align: center;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for i in user %}
+          <tr>
+            <td>{{i.0}}</td>
+            <td>{{i.1}}</td>
+            <td>{{i.2}}</td>
+            <td>{{i.6}}</td>
+          </tr>    
+        {% endfor %}  
+        </tbody>
+      </table>
+    </div>
+{% endblock  %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+    <br/>
+    <a href="/dashboarda" class="btn btn-success btn-lg">Back to Dashboard</a>
+    <br/><br/>
+    <table style="text-align: center;" class="table table-responsive table-striped">
+        <thead>
+          <tr class="bg-primary">
+            <th style="text-align: center;">ID</th>
+            <th style="text-align: center;">Name</th>
+            <th style="text-align: center;">Gender</th>
+            <th style="text-align: center;">City</th>
+            <th style="text-align: center;">Birth Date</th>
+            <th style="text-align: center;">Aadhar Card No</th>
+            <th style="text-align: center;">Email Address</th>
+            <th style="text-align: center;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+{% for i in row %}
+          <tr>
+            <td>{{ i.id }}</td>
+            <td>{{ i.name }}</td>
+            <td>{{ i.gender }}</td>
+            <td>{{ i.city }}</td>
+            <td>{{ i.birthdate }}</td>
+            <td>{{ i.aadharno }}</td>
+            <td>{{ i.email }}</td>
+            <td>{{ i.status }}</td>
+          </tr>
+{% endfor %}
+        </tbody>
+      </table>
+    </div>
+{% endblock  %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-xl-6 col-sm-12 col-12">
+                <img width="100%" class="" src="./static/complain_img.jpg">
+            </div>
+            <div class="col-md-6 col-xl-6 col-sm-12 col-12">
+                <br/><br/><br/>
+                <form method="POST" action="/complaintinserted/">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="description">Complain Description:</label>
+                        <textarea placeholder="Example...... two Street lights are not working" class="form-control" required rows="5"  name="description"></textarea>
+                    </div>
+                    <div>
+                        <input class="btn btn-danger btn-lg" name="submit" type = "submit" value = "submit"></input>
+                    </div>
+                    <br/>
+                    <p style="font-size: 20px;">Want to see previous complaints made <a href="" class="">By you</a></p>
+                  </form>
+            </div>
+        </div>
+        
+    </div>
+{% endblock  %}
